@@ -5,20 +5,21 @@
     align-items: center;
     height: 10vh;
     width: 100%;
-    padding-right: 0;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 .title-line {
     width: 100%;
     text-align: center;
-    border-bottom: 5px solid rgba(13, 106, 199, 0.718);
+    border-bottom: 0.1em solid rgba(13, 106, 199, 0.718);
     line-height: 0.1em;
-    margin: 10px 0 20px;
+    margin: 0.2em 0 0.4em;
 }
 
 .title-line-value {
     background: #fff;
-    padding: 0 10px;
+    padding: 0 0.2em;
 }
 
 .paragraph {
@@ -26,9 +27,13 @@
 }
 
 .icon {
-    border-radius: 50%;
-    width: 4em;
-    height: 4em;
+    border-radius: 70%;
+    width: 10vw;
+    height: 10vh;
     position: absolute;
-    left: 12px;
+    left: 0.5em;
+}
+
+.section {
+    padding: 1em;
 }
