@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
+
 <body>
+
 <div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#contact">Contact Me</a></li>
+    <img class="icon" src="files/steak.jpg">
+    <a href="#about">About Me</a>
+    <a href="#photos">My Photos</a>
+    <a href="#playlist">My Playlist</a>
+    <a href="#contact">Contact Me</a>
 </div>
-		  
+
 <section id="about" class="section">
-<br/>
-about me
-<br/>
+    <h2 class="title-line"><span class="title-line-value">About Me</span></h2>
+    <div class="paragraph">
+        My name is Liran Ben Zion Kozel. I am 25 years old and I'm from Rishon Le Zion.
+        I studied Computer Science and graduated from Bar-Ilan University in 2017
+    </div>
 </section>
 
 <section id="photos" class="section">
-<br/>
-my photos
-<br/>
+    <h2 class="title-line"><span class="title-line-value">My Photos</span></h2>
+
+
 </section>
 
 <section id="playlist" class="section">
-<br/>
-my playlist
-<br/>
+    <h2 class="title-line"><span class="title-line-value">Playlist</span></h2>
 </section>
 
 <section id="contact" class="section">
-<br/>
-
-contact me
-<br/>
+    <h2 class="title-line"><span class="title-line-value">Contect Me</span></h2>
 </section>
 
 
 <script type="text/javascript">
-$(function(){
-  $("#nav a").click(function(e){
-    e.preventDefault();
-    $('html,body').scrollTo(this.hash,this.hash); 
-  });
-});
+    $(function () {
+        $("#nav a").click(function (e) {
+            e.preventDefault();
+            $('html,body').scrollTo(this.hash, this.hash);
+        });
+    });
 </script>
 <script type="text/javascript">
- $(document).scroll(function() {
-    $('#menu').toggle($(this).scrollTop()>1000)
- });​
- </script>
+    $(document).scroll(function () {
+        $('#menu').toggle($(this).scrollTop() > 1000)
+    });
+</script>
 </body>
 </html>
