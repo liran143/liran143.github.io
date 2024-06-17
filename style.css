@@ -6,7 +6,16 @@
     height: 10vh;
     width: 100%;
     padding-left: 1em;
+}
 
+.vl {
+    border-left: 0.2em solid white;
+    height: 2em;
+    display: flex;
+    left: 50%;
+    margin-left: 0.5em;
+    top: 0;
+    padding-right: 0.5em;
 }
 
 .header-items a {
@@ -22,14 +31,30 @@
     left: 0.5em;
 }
 
-.vl {
-    border-left: 0.2em solid white;
-    height: 2em;
-    display: flex;
-    left: 50%;
-    margin-left: 0.5em;
-    top: 0;
-    padding-right: 0.5em;
+#photos {
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.photos {
+    display:flex;
+    flex-wrap:wrap;
+    height: 30vh;
+}
+
+.photos img {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+.photos-column {
+    float: left;
+    width: 40%;
+    padding: 3em;
+
 }
 
 
