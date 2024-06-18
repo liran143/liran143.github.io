@@ -1,3 +1,9 @@
+#menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 .header-items {
     background: black;
     display: flex;
@@ -10,7 +16,6 @@
 
 .header-items a:hover {
     color: purple;
-
 }
 
 .vl {
@@ -80,6 +85,7 @@
 }
 
 body {
-    background-image: linear-gradient(180deg, gray, rebeccapurple);
-    overflow: auto;
+    background-image: linear-gradient(90deg, gray, rebeccapurple);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
