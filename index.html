@@ -2,7 +2,6 @@
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src="main.js"></script>
 </head>
 
 <body>
@@ -68,7 +67,7 @@
     $(function () {
         $("#nav a").click(function (e) {
             e.preventDefault();
-            const  menu = document.getElementById("menu");
+            const menu = document.getElementById("menu");
 
             $('html,body').scrollTo(this.hash, this.hash);
         });
