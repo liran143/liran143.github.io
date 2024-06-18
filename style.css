@@ -1,11 +1,15 @@
 .header-items {
-    background: #3E5C76;
+    background: black;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 10vh;
     width: 100%;
     padding-left: 1em;
+}
+.header-items a:hover {
+    color:purple;
+
 }
 
 .vl {
@@ -32,20 +36,21 @@
 }
 
 #photos {
-    height: 30vh;
+    height: 35vh;
     align-items: center;
     justify-content: center;
 }
 
 
 .photos {
-    display:flex;
-    flex-wrap:wrap;
-    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    height: 35vh;
+    overflow:auto;
 }
 
 .photos img {
-    width: 100%;
+    max-width: 100%;
     height: 25vh;
     object-fit: cover;
 }
@@ -54,7 +59,6 @@
     float: left;
     width: 40%;
     padding: 3em;
-
 }
 
 
@@ -73,8 +77,14 @@
 
 .paragraph {
     text-align: center;
+    padding: 0.5em;
 }
 
 .section {
     padding: 1em;
+}
+
+body {
+    background-image: linear-gradient(180deg, gray, rebeccapurple);
+    overflow: hidden;
 }
