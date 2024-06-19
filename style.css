@@ -80,6 +80,12 @@
     padding: 0.5em;
 }
 
+.playlist-iframe {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
 .section {
     padding: 1em;
 }
