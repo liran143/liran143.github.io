@@ -66,21 +66,5 @@
     <h2 class="title-line"><span class="title-line-value">Contect Me</span></h2>
 </section>
 
-
-<script type="text/javascript">
-    $(function () {
-        $("#nav a").click(function (e) {
-            e.preventDefault();
-            const menu = document.getElementById("menu");
-
-            $('html,body').scrollTo(this.hash, this.hash);
-        });
-    });
-</script>
-<script type="text/javascript">
-    $(document).scroll(function () {
-        $('#menu').toggle($(this).scrollTop() > 1000)
-    });
-</script>
 </body>
 </html>
