@@ -1,65 +1,16 @@
-#menu {
-    position: sticky;
-    top: 0;
-    width: 100%;
+/*
+------ Common styles -------
+*/
+
+body {
+    background-image: linear-gradient(90deg, gray, rebeccapurple);
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.header-items {
-    background: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-    width: 100%;
-    padding-left: 1em;
-}
-
-.header-items a:hover {
-    color: purple;
-}
-
-.vl {
-    border-left: 0.2em solid white;
-    height: 2em;
-    display: flex;
-    left: 50%;
-    margin-left: 0.5em;
-    top: 0;
-    padding-right: 0.5em;
-}
-
-.header-items a {
-    text-decoration: none;
-    color: white;
-}
-
-.icon {
-    border-radius: 70%;
-    width: 8vw;
-    height: 8vh;
-    position: absolute;
-    left: 0.5em;
-}
-
-
-.photos {
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto;
-    overflow: auto;
-    padding: 0
-}
-
-.photos img {
-    width: 20em;
-    height: 20em;
-    object-fit: fill;
-}
-
-.photos-column {
-    padding: 1em 1em;
+.section {
+    padding: 1em;
+    scroll-margin-top: 6em;
 }
 
 .title-line {
@@ -75,10 +26,74 @@
     padding: 0 0.2em;
 }
 
+/* ---------- */
+
+#menu {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 6vh;
+}
+
+.icon {
+    border-radius: 70%;
+    width: 8vw;
+    height: 100%;
+    position: absolute;
+    left: 0.5em;
+}
+
+.vertical-line {
+    border-left: 0.2em solid white;
+    height: 2em;
+    left: 50%;
+    margin-left: 0.5em;
+    top: 0;
+    padding-right: 0.5em;
+}
+
+.header-items {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding-left: 1em;
+}
+
+.header-items a:hover {
+    color: plum;
+}
+
+.header-items a {
+    text-decoration: none;
+    color: white;
+}
+
 .paragraph {
     text-align: center;
     padding: 0.5em;
     color: white;
+}
+
+.photos {
+    height: 45vh;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: auto;
+}
+
+.photos-column {
+    padding: 1em 1em;
+}
+
+.photos img {
+    width: 20em;
+    height: 20em;
+    object-fit: fill;
 }
 
 .playlist-iframe {
@@ -87,9 +102,9 @@
     display: grid;
 }
 
-.section {
-    padding: 1em;
-    scroll-margin-top: 6em;
+.contact-form {
+    display: table;
+    margin: 0 auto;
 }
 
 .contact-label {
@@ -103,7 +118,6 @@
 .contact-label label, input, select {
     display: table-cell
 }
-
 
 .contact-label-mail {
     display: table-row;
@@ -121,11 +135,6 @@
 }
 
 
-.contact-form {
-    display: table;
-    margin: 0 auto;
-}
-
 #icons-select {
     font-family: "FontAwesome", serif;
     font-size: 2em;
@@ -134,17 +143,10 @@
 
 input[type=submit] {
     background-color: plum;
-    color:white;
+    color: white;
     width: 180%;
     height: 2em;
-    border:none;
+    border: none;
     border-radius: 1em;
     cursor: pointer;
-
-}
-
-body {
-    background-image: linear-gradient(90deg, gray, rebeccapurple);
-    overflow-y: auto;
-    overflow-x: hidden;
 }
