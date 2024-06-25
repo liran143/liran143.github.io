@@ -97,11 +97,16 @@
     text-align: center;
     font-size: 1.5em;
     color: white;
-
+    display: table-row;
 }
 
+.contact-label label, input, select {
+    display: table-cell
+}
+
+
 .contact-label-mail {
-    display: grid;
+    display: table-row;
     grid-template-columns: auto auto;
     align-items: center;
     justify-content: center;
@@ -109,15 +114,20 @@
     padding: 1em;
     text-align: center;
     color: white;
-
-
 }
 
-#contact {
+.contact-label-mail label, textarea {
+    display: table-cell
+}
+
+
+.contact-form {
+    display: table;
+    margin: 0 auto;
 }
 
 #icons-select {
-    font-family: "FontAwesome";
+    font-family: "FontAwesome", serif;
     font-size: 2em;
 
 }
