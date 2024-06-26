@@ -77,6 +77,19 @@ body {
     color: white;
 }
 
+#about table {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+
+#about th, td {
+    border: 0.2em solid;
+    color: lightgoldenrodyellow;
+
+}
+
+
 .photos {
     height: 45vh;
     align-items: center;
