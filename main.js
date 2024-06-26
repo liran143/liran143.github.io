@@ -4,12 +4,10 @@ const buildMailTo = (mail, params) => {
     if (params.length === 1) {
         return mailto;
     }
-    mailto += "&";
-    for (let i = 1; i < params.length - 1; i++) {
+    for (let i = 1; i < params.length ; i++) {
         const {key, value} = params[i];
-        mailto += key + "=" + value + "&";
+        mailto +=  "&" + key + "=" + value;
     }
-    mailto += params[params.length - 1].key + "=" + params[params.length - 1].value;
     return mailto;
 }
 
