@@ -75,6 +75,9 @@ body {
     text-align: center;
     padding: 0.5em;
     color: white;
+    align-items: center;
+    justify-content: center;
+    display: grid;
 }
 
 #about table {
@@ -86,9 +89,10 @@ body {
 #about th, td {
     border: 0.2em solid;
     color: lightgoldenrodyellow;
-
 }
 
+#about ul li {
+}
 
 .photos {
     height: 45vh;
